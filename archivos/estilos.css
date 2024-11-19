@@ -40,6 +40,74 @@ body {
   transition: all 0.3s ease;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(9, 74, 146);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 3s;
+}
+.card div .card .frente {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5PX 10PX #000;
+}
+
+.card .frente img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .frente h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card .dorso {
+  background: rgb(3, 35, 54);
+  transform: perspective(600px) rotateY(180deg);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card:hover .frente {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .dorso {
+  transform: perspective(500px) rotateY(360deg);
+}
+
 #formulario {
   background-image: url(/Imagenes/fondo3.jpg);
   background-position: center center;
