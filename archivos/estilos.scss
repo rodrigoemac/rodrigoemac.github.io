@@ -1,25 +1,27 @@
+$color1: #ffffff;
+$color2: #BBBBBB;
+$color3 :#00C3FF;
+$color4 :#0E1012;
+
+
+$letra1: sans-serif;
 * {
     margin: 0;
     pad: 0;
     box-sizing: border-box;
-    list-style: none;
+    list-style-type: none;
 }
 
 body {
-    font-family: sans-serif;
+    font-family:$letra1;
     text-transform: capitalize;
 }
 
+//========================= Nav bar =================================
 
-.contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
+#nav-galeria{
+    background-color: transparent;
 }
-
-.navbar {
-    background-color: #585a61;
-}
-
 .navbar-brand {
     width: 100x;
     height: 115px;
@@ -29,6 +31,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-left: 10px;
 
 }
 
@@ -36,29 +39,38 @@ body {
     font-size: 20px;
     font-weight: 500;
 }
-
 .nav-item a {
-    color: #ffffff !important;
+    color: $color1 !important;
     transition: all .3s ease;
-
+    margin-right: 10px;
 }
-
-//productos y servicios
-
-.container {
+.navbar-toggler{
+    margin-right: 20px;
+}
+.nav-item{
+    text-align: center;
+}
+//========================= Productos y servicios =================================
+#pys{
+    background-image: radial-gradient(circle, #0e1012, #111315, #131517, #15171a, #17191c, #191c1f, #1b1e21, #1d2124, #202428, #23282c, #272b30, #2a2f34);}
+    .container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(9, 74, 146);
     margin-top: 8px;
     margin-bottom: 8px;
+}
+#pys header .navbar{
+    background-color: $color3;
 }
 
 .card {
     position: relative;
     width: 300px;
     height: 400px;
+    margin: 20px;
 }
 
 .card div {
@@ -68,7 +80,7 @@ body {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: 3s;
+    transition: 1s;
 
 
     .card .frente {
@@ -90,38 +102,54 @@ body {
     width: 100%;
     height: 45px;
     line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
+    color: $color1;
+    background: $color4;
     text-align: center;
 }
 
 
 
 .card .dorso {
-    background: rgb(3, 35, 54);
+    background: $color4;
     transform: perspective(600px) rotateY(180deg);
     padding: 15px;
-    color: #f3f3f3;
+    color: $color1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    justify-content: space-between;
 }
 
+.card .dorso h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
 
+.card .dorso p{
+    letter-spacing: 1px;
+}
 
+.card .dorso .enlace{
+    border-top: solid 1px $color1;
+    height: 50px;
+    line-height: 50px;
+    color: $color1;
+}
 .card:hover .frente {
-    transform: perspective(500px) rotateY(180deg);
-
+    transform: perspective(600px) rotateY(180deg);
+    
 }
 
 .card:hover .dorso {
-    transform: perspective(500px) rotateY(360deg);
+    transform: perspective(600px) rotateY(360deg);
 }
 
 
 
-//formulario
+
+//========================= Formulario =================================
 #formulario {
     background-image: url(/Imagenes/fondo3.jpg);
     background-position: center center;
@@ -139,8 +167,8 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
     border-radius: 4px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    font-family: $letra1;
+    color: $color1;
     box-shadow: 7px 13px 40px #000;
 
     .titulo {
@@ -153,8 +181,8 @@ body {
         background: #1b161da8;
         border-radius: 4px;
         margin-bottom: 16px;
-        border: 1px solid #00C3FF;
-        color: #ffffff;
+        border: 1px solid $color3;
+        color: $color1;
     }
 
     p {
@@ -163,27 +191,109 @@ body {
         font-size: 16px;
 
         a {
-            color: white;
+            color: $color1;
             text-decoration: none;
         }
     }
 
     .boton {
         width: 100%;
-        background-color: #00C3FF;
+        background-color: $color3;
         border: none;
         font-size: 16px;
         margin-top: 10px;
     }
-
-
 }
 
+//========================= color de fondo galeria =================================
+#galeria{
+    background-image: linear-gradient(to right bottom, #0e1012, #111315, #131517, #15171a, #17191c, #191c1f, #1b1e21, #1d2124, #202428, #23282c, #272b30, #2a2f34);
+}
 
+//========================= Sobre Nosotros =================================
+#sn{
+    background-image: radial-gradient(circle, #0e1012, #111315, #131517, #15171a, #17191c, #191c1f, #1b1e21, #1d2124, #202428, #23282c, #272b30, #2a2f34)
+}
 
+.sobre_nosotros{
+    margin: auto;
+}
+.seccion{
+    width: 75%;
+    margin: auto;
+    padding: 75px 0;
+}
+.seccion-titulo{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: $color1;
+    font-weight: bold;
+    text-align: center;
+}
+.nosotros{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nosotros_texto{
+    width: 60%;
+    padding: 0 10% 0 0;
+}
+.nosotros_parrafo{
+    font-family: $letra1;
+    font-size: 18px;
+    color: $color1;
+    text-align: justify;
+}
+.parrafo_texto{
+    margin: 10px 0;
+}
+.nosotros_img{
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.imagen_nosotros{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .nosotros {
+        flex-direction: column; 
+        align-items: center; 
+    }
 
+    .nosotros_texto,
+    .nosotros_img {
+        width: 100%; 
+        padding: 0; 
+    }
 
-/*footer*/
+    .nosotros_parrafo {
+        font-size: 16px; 
+    }
+
+    .seccion {
+        width: 90%; 
+    }
+
+    .seccion-titulo {
+        font-size: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .nosotros_parrafo {
+        font-size: 14px; 
+    }
+
+    .seccion-titulo {
+        font-size: 24px; 
+    }
+}
+
 .contenedor-img {
     width: 100%;
     max-width: 1100px;
@@ -238,9 +348,15 @@ body {
         height: 200px;
     }
 }
+//========================= footer =================================
 
-footer {
-    background-color: #585a61;
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
     padding: 80px 0;
 }
 
@@ -254,16 +370,21 @@ footer {
     padding: 0 15px;
 }
 
+
+
 .footer-links h4 {
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #00C3FF;
+    border-bottom: 2px solid $color3;
     padding-bottom: 6px;
     display: inline-block;
-
-
+}
+.footer-links ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-links ul li a {
@@ -277,7 +398,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: #ffffff;
+    color: $color1;
     padding-left: 10px;
 }
 
@@ -290,22 +411,27 @@ footer {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: $color1;
     transition: all .3s ease;
 }
 
 .social-links a:hover {
-    background-color: #00C3FF;
+    background-color: $color3;
 }
 
-@media(max-width: 991px) {
-    .footer-row {
+@media(max-width:991px){
+    .footer-row{
         text-align: center;
     }
 
-    .footer-links {
+    .footer-links{
         width: 100%;
         margin-bottom: 30px;
     }
+    .footer-row .footer-links ul li a{
+        text-align: center;
+    }
 
+    
+    
 }

@@ -5,57 +5,55 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Herreria de Montaña</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body class="bg-dark" id="formulario">
 	<header>
-		<!-- Inicio de NavBar con boostrap-->
-		<nav class="navbar navbar-expand-md navbar-dark">
-			<!-- Brand -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<!-- Logo -->
 			<a class="navbar-brand" href="#"><img src="../Imagenes/Logo.png" alt="Logo"></a>
 
-			<!-- Toggler/collapsibe Button -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<!-- Botón de colapso -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<!-- Navbar links -->
-			<div class="navbar-nav d-flex justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav">
+			<!-- Enlaces del menú -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+
 					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Volver</a>
+						<a class="nav-link" href="/index.html">Volver</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="galeria.html">Galeria</a>
+						<a class="nav-link" href="/archivos/galeria.html">Galería</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="productosYServicios.html">Productos y Servicios</a>
-					</li>
+						<a class="nav-link" href="/archivos/productosYServicios.html">Productos y Servicios</a>
 					<li class="nav-item">
-						<a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+						<a class="nav-link" href="archivos/sobreNosotros.html">Sobre Nosotros</a>
+					</li>
 					</li>
 				</ul>
-
 			</div>
 		</nav>
-		<!-- Inicio de NavBar con boostrap-->
 	</header>
 	<section class="form-registro">
 		<h4 class="titulo">Formilario de Registro</h4>
-		<input class="controls" type="text" name="" id="nombres"placeholder="Ingrese su Nombre">
-		<input class="controls" type="text" name="" id="apellido"placeholder="Ingrese su Apellido">
-		<input class="controls" type="email" name="" id="correo"placeholder="Ingrese Su E-Mail">
-		<input class="controls" type="password" name="" id="password"placeholder="Ingrese su Contraseña">
+		<input class="controls" type="text" name="" id="nombres" placeholder="Ingrese su Nombre">
+		<input class="controls" type="text" name="" id="apellido" placeholder="Ingrese su Apellido">
+		<input class="controls" type="email" name="" id="correo" placeholder="Ingrese Su E-Mail">
+		<input class="controls" type="password" name="" id="password" placeholder="Ingrese su Contraseña">
 		<p>Estoy de auerdo con <a class="a1" href="#">Terminos y Condiciones</a></p>
 		<input class="boton" type="submit" value="Registrar">
 		<p><a class="a2" href="#">¿Ya tienes una cuenta?</a></p>
 	</section>
-	
-	<footer class="footer">
+
+	<footer class="footer bg-dark">
 
 		<div clas="contenedor">
 			<div class="footer-row">
@@ -101,12 +99,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-		</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-		</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html

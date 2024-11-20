@@ -5,63 +5,73 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Herreria de Montaña</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
-<body>
-	<header>
-		<!-- Inicio de NavBar con boostrap-->
-		<nav class="navbar navbar-expand-md navbar-dark">
-			<!-- Brand -->
-			<a class="navbar-brand" href="#"><img src="../Imagenes/Logo.png" alt="Logo"></a>
+<body id="pys">
+	<header >
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#"><img src="../Imagenes/Logo.png" alt="Logo"></a>
 
-			<!-- Toggler/collapsibe Button -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+            <!-- Botón de colapso -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-			<!-- Navbar links -->
-			<div class="navbar-nav d-flex justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Volver</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contacto.html">Contacto</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="galeria.html">Galeria</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+            <!-- Enlaces del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Volver</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+	<!-- Tarjetas de productos y servicios -->
 	<div class="container">
-
 		<div class="card">
-
 			<div class="frente">
 				<img src="/Imagenes/herreria1.jpg" alt="">
 				<h3>Obra</h3>
 			</div>
 			<div class="dorso">
 				<h3>Obra</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquam earum ratione maiores
-					soluta cupiditate amet quos est nisi voluptatum culpa architecto quae sint eligendi omnis harum
-					expedita, reprehenderit esse.</p>
-
+				<p>En Herrería de Montaña hacemos realidad tus proyectos.
+					Ofrecemos presupuestos adaptados, con la mejor relación precio-calidad.
+					Te asesoramos de principio a fin para garantizar los resultados que esperas.
+				</p>
+				<a class="enlace" href="#">Ir a Trabajos</a>
+			</div>
+		</div>
+		<div class="card">
+			<div class="frente">
+				<img src="/Imagenes/protecto5.jpeg" alt="">
+				<h3>Productos</h3>
+			</div>
+			<div class="dorso">
+				<h3>Productos</h3>
+				En Herrería de Montaña diseñamos el mueble industrial que estás buscando, combinando estilo, funcionalidad y calidad.				<a class="enlace" href="#">Productos</a>
 			</div>
 		</div>
 	</div>
 	<!-- Inicio del footer-->
 
-	<footer class="footer">
+	<footer class="footerpys">
 
 		<div clas="contenedor">
 			<div class="footer-row">
@@ -107,12 +117,9 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-		</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-		</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
